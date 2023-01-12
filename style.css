@@ -1,12 +1,38 @@
-:root{
-    --Very-Light-Gray: hsl(0, 0%, 98%);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --todo: hsl(0, 0%, 98%);
+    --body-bg: hsl(236, 33%, 92%);
+    --count: hsl(233, 11%, 84%);
+    --footer: hsl(236, 9%, 61%);
+    --clear-hover: hsl(237, 14%, 26%);
+    --footer-hover: hsl(237, 14%, 26%);
+    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+    --all-hover: hsl(220, 98%, 61%);
+    /*     
+        --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+        --Light-Grayish-Blue: hsl(234, 39%, 85%);
+        --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+        --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+        --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+        --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%); */
+
+
+}
+
+[data-theme='darkTheme'] {
+    --todo: hsl(0 0%, 98%);
+    --body-bg: hsl(235, 24%, 19%);
+    --all-hover: hsl(220, 98%, 61%);
+    --footer-hover: hsl(0, 0%, 100%);
+    --clear-hover: hsl(236, 33%, 92%);
 }
 
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -20,37 +46,39 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
-  list-style: none;
+    list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    background-color: var(--body-bg);
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -58,21 +86,125 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
+    html:focus-within {
+        scroll-behavior: auto;
+    }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.desktop-background {
+    width: 100vw;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    flex-direction: column;
+    transform: translateY(-178px);
+}
+
+.wrapper * {
+    margin-block: .3rem;
+}
+
+.wrapper div {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    color: var(--todo);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.theme {
+    height: 31px;
+}
+
+.todo-input {
+    display: flex;
+}
+
+#todo-input {
+    width: 100%;
+    padding-block: 0.8rem;
+    border: 1px solid;
+    border-radius: 0.2rem;
+}
+
+.todo-wrapper {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 17px 1px rgba(87, 76, 76, 0.46);
+    -webkit-box-shadow: 2px 2px 17px 1px rgba(87, 76, 76, 0.46);
+    -moz-box-shadow: 2px 2px 17px 1px rgba(87, 76, 76, 0.46);
+}
+
+.filters {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    color: var(--footer);
+    display: flex;
+    align-items: baseline;
+}
+
+.footer * {
+    cursor: pointer;
+}
+
+.footer p:not([class="all"]) {
+    transition: all ease-in-out .3s;
+}
+
+.footer p:not([class="all"]):hover {
+    font-weight: 500;
+    color: var(--footer-hover);
+}
+
+
+.clear {
+    text-align: end;
+}
+
+.all:hover {
+    color: var(--all-hover);
+    font-weight: 600;
+}
+
+.count {
+    color: var(--count);
+}
+
+.clear:hover {
+    color: var(--clear-hover);
+}
+
+.dragdrop {
+    text-align: center;
 }
