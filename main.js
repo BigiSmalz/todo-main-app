@@ -9,8 +9,5 @@ themeIcon.addEventListener('click', () => {
  }
 })
 // Add items
-const itemCount = document.querySelectorAll('.count span')
-const mobCount = document.querySelectorAll('.items-count span')
-
-itemCount.innerText =
- mobCount.innerText =
+const addButton = document.querySelector('.todo-input button');
+const 
