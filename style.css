@@ -145,12 +145,18 @@ select {
 
 .todo-input {
     display: flex;
+    gap: 1.5rem;
+    background-color: var(--todo);
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 0.8rem;
+    border-radius: 0.2rem;
 }
 
 #todo-input {
     width: 100%;
     padding-block: 0.8rem;
-    border: 1px solid;
+    border: 0px solid;
     border-radius: 0.2rem;
 }
 
@@ -162,6 +168,42 @@ select {
     -webkit-box-shadow: 2px 2px 17px 1px rgba(87, 76, 76, 0.46);
     -moz-box-shadow: 2px 2px 17px 1px rgba(87, 76, 76, 0.46);
 }
+
+#simpleList {
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+
+.todo {
+    margin-right: auto;
+}
+
+.todos *{
+   cursor: pointer; 
+}
+
+.check {
+    padding-inline: 6px;
+    padding-block: 3px;
+    border: 0px;
+    height: 25px;
+    width: 24px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #57ddff, #c058f3);
+}
+
+.todo p {
+    font-weight: 500;
+    font-size: clamp(10px, 1.2vw, 1.5rem);
+}
+
 
 .filters {
     display: flex;
@@ -207,4 +249,7 @@ select {
 
 .dragdrop {
     text-align: center;
+    color: var(--footer);
+    line-height: 6rem;
+    cursor: pointer;
 }
