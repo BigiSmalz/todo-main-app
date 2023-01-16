@@ -15,45 +15,66 @@
 </head>
 
 <body>
-  <div class="background"></div>
+  <div class="background">
+    <picture id="image">
+      <source srcset="./images/bg-desktop-light.jpg" media="(min-width: 600px)" />
+      <img class="desktop-background" src="/images/bg-mobile-light.jpg" alt="backgorund image" />
+    </picture>
+  </div>
+  <!-- todo -->
   <div class="wrapper">
     <div class="header">
       <h1>todo</h1>
-      <img class="theme" src="images/icon-sun.svg" alt="theme-icon" />
+      <img id="icon" class="theme" src="images/icon-sun.svg" alt="theme-icon" />
     </div>
     <div class="todo-input">
-      <button></button>
-      <input name="todo-input" id="todo-input" aria-label="todo-input" type="text" placeholder="Create a new todo..." />
+      <button class="check">
+        <img src="./images/icon-check.svg" alt="check">
+      </button> <input name="todo-input" id="todo-input" aria-p="todo-input" type="text"
+        placeholder="Create a new todo..." />
     </div>
-    <div class="todos">
-      <ul id="simpleList"></ul>
-    </div>
-    <div class="action">
-      <div class="items-count"><span></span> items left</div>
-      <div class="action-clear">Clear Completed</div>
-    </div>
-    <div class="footer">
-      <div class="count"><span></span> items left</div>
-      <div class="filters">
-        <label>
-          <input type="radio" name="filter" id="all" checked />
-          <span>All</span>
-        </label>
-        <label>
-          <input type="radio" name="filter" id="active" />
-          <span>Active</span>
-        </label>
-        <label>
-          <input type="radio" name="filter" id="completed" />
-          <span>Completed</span>
-        </label>
+    <!-- todo-wrapper -->
+    <div class="todo-wrapper">
+      <!-- todos -->
+      <div class="todos">
+        <ul id="simpleList">
+          <li class="todo-item">
+            <button class="check">
+              <img src="./images/icon-check.svg" alt="check">
+            </button>
+            <span class="todo">
+              <p>
+                jog around the park 3x
+              </p>
+            </span>
+            <span>
+              <img src="./images/icon-cross.svg" alt="cross" />
+            </span>
+          </li>
+        </ul>
       </div>
-      <div class="clear">Clear Completed</div>
+      <!-- footer -->
+      <div class="footer">
+        <div class="count"><span></span> items left</div>
+        <div class="filters">
+          <p class="all">
+            All
+          </p>
+          <p>
+            Active
+          </p>
+          <p>
+            Completed
+          </p>
+        </div>
+        <div class="clear">Clear Completed</div>
+      </div>
     </div>
     <div class="dragdrop">
       <p>Drag and drop to reorder list</p>
     </div>
   </div>
+
   <script src='main.js'></script>
 
 </body>
