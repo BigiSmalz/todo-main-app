@@ -1,0 +1,93 @@
+@media(max-width:375px) {
+
+ .clear,
+ .count {
+  display: none;
+ }
+
+ .background {
+  background: url("images/bg-desktop-dark.jpg") no-repeat;
+  background-size: cover;
+  height: 35vh;
+ }
+
+ .wrapper {
+  width: 90%;
+ }
+
+ .header h1 {
+  font-size: 1.5rem;
+ }
+
+ .filters {
+  margin: auto;
+ }
+
+ .footer {
+  border-radius: 8px;
+  margin-top: 20px;
+ }
+
+ .mob {
+  color: hsl(233, 14%, 35%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: hsl(235, 24%, 19%);
+  height: 50px;
+  font-size: 1rem;
+  color: hsl(234, 11%, 52%);
+  padding: 15px;
+  border-radius: 0 0 8px 8px;
+ }
+
+ .mob-clear {
+  cursor: pointer;
+ }
+
+ .mob-clear:hover {
+  color: hsl(236, 33%, 92%);
+ }
+
+ body.light .mob {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(236, 9%, 61%);
+ }
+
+ body.light .background {
+  background: url("images/bg-mobile-light.jpg") no-repeat;
+  background-size: cover;
+ }
+
+ body.light .mob-clear:hover {
+  color: hsl(235, 19%, 35%);
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
