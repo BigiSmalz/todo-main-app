@@ -41,8 +41,8 @@
 const themeIcon = document.querySelector('.theme');
 
 themeIcon.addEventListener('click', () => {
- document.body.classList.toggle('light')
- if (document.body.classList.contains('light')) {
+ document.body.classList.toggle('darkTheme')
+ if (document.body.classList.contains('darkTheme')) {
   themeIcon.src = 'images/icon-moon.svg'
  } else {
   themeIcon.src = 'images/icon-sun.svg'
