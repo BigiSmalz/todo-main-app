@@ -30,11 +30,11 @@
 // itemCount.innerText =
 //  mobCount.innerText =
 /* Count Items left */
-const itemCount = document.querySelector('.count span');
-const mobCount = document.querySelector('.mob-count span');
+// const itemCount = document.querySelector('.count span');
+// const mobCount = document.querySelector('.mob-count span');
 
-itemCount.innerText = document.querySelectorAll('.list').length;
-mobCount.innerText = document.querySelectorAll('.list').length;
+// itemCount.innerText = document.querySelectorAll('.list').length;
+// mobCount.innerText = document.querySelectorAll('.list').length;
 
 
 /* Change Theme */
@@ -150,12 +150,7 @@ clear.addEventListener('click', () => {
   removeItems(item.closest('li'));
  })
 })
-mobClear.addEventListener('click', () => {
- const itemChecked = document.querySelectorAll('.list input[type="checkbox"]:checked');
- itemChecked.forEach(item => {
-  removeItems(item.closest('li'));
- })
-})
+
 
 /*reorder list */
 // Sortable.create(simpleList);

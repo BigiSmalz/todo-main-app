@@ -1,9 +1,5 @@
 @media(max-width:375px) {
 
- .clear,
- .count {
-  display: none;
- }
 
  .background {
   background: url("images/bg-desktop-dark.jpg") no-repeat;
@@ -23,12 +19,8 @@
   margin: auto;
  }
 
- .footer {
-  border-radius: 8px;
-  margin-top: 20px;
- }
 
- .mob {
+ .footer {
   color: hsl(233, 14%, 35%);
   display: flex;
   justify-content: space-between;
@@ -41,15 +33,15 @@
   border-radius: 0 0 8px 8px;
  }
 
- .mob-clear {
+ .clear {
   cursor: pointer;
  }
 
- .mob-clear:hover {
+ .clear:hover {
   color: hsl(236, 33%, 92%);
  }
 
- body.light .mob {
+ body.light .footer {
   background-color: hsl(0, 0%, 98%);
   color: hsl(236, 9%, 61%);
  }
@@ -59,35 +51,7 @@
   background-size: cover;
  }
 
- body.light .mob-clear:hover {
+ body.light .clear:hover {
   color: hsl(235, 19%, 35%);
  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
