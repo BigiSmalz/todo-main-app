@@ -3,7 +3,7 @@
 :root {
     --heading: hsl(0, 0%, 98%);
     --todo: hsl(0, 0%, 98%);
-    --todo-item:  hsl(0, 4%, 5%);
+    --todo-item: hsl(0, 4%, 5%);
     --body-bg: hsl(236, 33%, 92%);
     --count: hsl(233, 11%, 84%);
     --footer: hsl(236, 9%, 61%);
@@ -11,21 +11,21 @@
     --footer-hover: hsl(237, 14%, 26%);
     --all-hover: hsl(220, 98%, 61%);
 
-    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+    /* --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
     --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
     --Light-Grayish-Blue: hsl(234, 39%, 85%);
     --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
     --Dark-Grayish-Blue: hsl(234, 11%, 52%);
     --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
-    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%); */
 
 
 }
 
 .darkTheme {
     --heading: hsl(0, 0%, 98%);
-    --todo:  hsl(235, 19%, 35%);
-    --todo-item:  hsl(0, 0%, 98%);
+    --todo: hsl(235, 19%, 35%);
+    --todo-item: hsl(0, 0%, 98%);
     --body-bg: hsl(235, 24%, 19%);
     --count: hsl(233, 11%, 84%);
     --footer: hsl(236, 9%, 61%);
@@ -97,7 +97,7 @@ select {
 }
 
 
-.desktop-background {
+.background {
     width: 100vw;
 }
 
@@ -249,4 +249,34 @@ select {
     color: var(--footer);
     line-height: 6rem;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
