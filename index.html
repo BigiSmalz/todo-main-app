@@ -29,31 +29,32 @@
       <h1>todo</h1>
       <img id="icon" class="theme" src="images/icon-sun.svg" alt="theme-icon" />
     </div>
-    <div class="todo-input">
-      <button class="check">
-        <img src="./images/icon-check.svg" alt="check">
-      </button> <input name="todo-input" id="todo-input" aria-p="todo-input" type="text"
-        placeholder="Create a new todo..." />
-    </div>
+    <form class="todo-input">
+      <span> <input type="checkbox" name="todo" class="check" />
+      </span>
+      <input name="content" id="input" aria-p="todo-input" type="text" placeholder="Create a new todo..." />
+    </form>
     <!-- todo-wrapper -->
     <div class="todo-wrapper">
       <!-- todos -->
       <div class="todos">
-        <ul id="simpleList">
+        <!-- <ul class="simpleList">
+          <input type="checkbox" />
           <li class="todo-item">
-            <button class="check">
-              <img src="./images/icon-check.svg" alt="check">
-            </button>
+            <input type="checkbox" />
+            <label class="check">
+              <img src="./images/icon-check.svg" alt="check" />
+            </label>
             <span class="todo">
               <p>
-                jog around the park 3x
+                jog around th e park 3x
               </p>
             </span>
-            <span>
+            <button class="">
               <img src="./images/icon-cross.svg" alt="cross" />
-            </span>
+            </button>
           </li>
-        </ul>
+        </ul> -->
       </div>
       <!-- footer -->
 
